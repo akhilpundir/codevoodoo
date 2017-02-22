@@ -3,4 +3,4 @@
 # author: Akhil Pundir #
 ########################
 
-basic framework for dynamic websites, with php and ajax functionality.
+Minimalistic MVC framework for dynamic websites, with php functionality, like routing.
