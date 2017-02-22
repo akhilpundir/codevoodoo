@@ -1,0 +1,49 @@
+[
+    {
+        "name": "vanpattenmedia/quickassets",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vanpattenmedia/quickassets.git",
+            "reference": "18946bc386492c79be625c3329ae053d61bbdecd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vanpattenmedia/quickassets/zipball/18946bc386492c79be625c3329ae053d61bbdecd",
+            "reference": "18946bc386492c79be625c3329ae053d61bbdecd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-12-17 19:51:08",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "VanPattenMedia\\QuickAssets": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Van Patten",
+                "email": "chris@vanpattenmedia.com",
+                "homepage": "http://vanpattenmedia.com/",
+                "role": "Developer"
+            },
+            {
+                "name": "Peter Upfold",
+                "email": "peter@vanpattenmedia.com",
+                "homepage": "http://peter.upfold.org.uk/",
+                "role": "Developer"
+            }
+        ],
+        "description": "Cache-busting URLs made easy",
+        "homepage": "https://github.com/vanpattenmedia/quickassets"
+    }
+]

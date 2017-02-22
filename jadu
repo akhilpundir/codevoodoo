@@ -1,0 +1,32 @@
+#!bash /bin/php
+<?php
+require "vendor/autoload.php";
+use App\Core\Jadu;
+
+if(count($argv)<=3 && count($argv) > 1)
+{
+	$filename = ucfirst($argv[1]);
+	if(!file_exists("app/controllers/$filename"."Controller.php"))
+	{
+		if(isset($argv[2]) && count($argv[2]>0))
+		{
+			$methods[] = explode(',',$argv[2]);
+		}
+		else
+		{
+			$methods = [];
+		}
+
+		Jadu::jadu_controller($filename,$methods);
+		echo "Controller successfully manifested at app/controllers/$filename"."Controller.php\n";
+	}
+	else
+	{
+		echo "$filename"."Controller already exists at app/controllers/, try again!\n";
+	}
+
+}
+else
+{
+	echo "Error: Usage of Jadu.php => php jadu.php <controllername> [methods seperated by commas without space]\n";
+}
